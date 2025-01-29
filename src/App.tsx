@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
+import { CVProvider } from './contexts/CVContext';
 import { Navbar } from './components/Navbar';
 import { Home } from './pages/Home';
 import { Dashboard } from './pages/Dashboard';
@@ -25,29 +26,31 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <div className="min-h-screen bg-black">
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/career-tools" element={<CareerTools />} />
-            <Route path="/courses" element={<OnlineCourses />} />
-            <Route path="/webinars" element={<Webinars />} />
-            <Route path="/cv-builder" element={<CVBuilder />} />
-            <Route path="/networking" element={<Networking />} />
-            <Route path="/career-coaching" element={<CareerCoaching />} />
-            <Route path="/ai-enhancement" element={<AIEnhancement />} />
-            <Route path="/ai-recommendations" element={<AIRecommendations />} />
-            <Route path="/upload-cv" element={<UploadCV />} />
-            <Route path="/search-talent" element={<SearchTalent />} />
-            <Route path="/talent/:id" element={<TalentProfile />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/roadmap" element={<Roadmap />} />
-          </Routes>
-          <Footer />
-        </div>
+        <CVProvider>
+          <div className="min-h-screen bg-black">
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/search" element={<Search />} />
+              <Route path="/career-tools" element={<CareerTools />} />
+              <Route path="/courses" element={<OnlineCourses />} />
+              <Route path="/webinars" element={<Webinars />} />
+              <Route path="/cv-builder" element={<CVBuilder />} />
+              <Route path="/networking" element={<Networking />} />
+              <Route path="/career-coaching" element={<CareerCoaching />} />
+              <Route path="/ai-enhancement" element={<AIEnhancement />} />
+              <Route path="/ai-recommendations" element={<AIRecommendations />} />
+              <Route path="/upload-cv" element={<UploadCV />} />
+              <Route path="/search-talent" element={<SearchTalent />} />
+              <Route path="/talent/:id" element={<TalentProfile />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/roadmap" element={<Roadmap />} />
+            </Routes>
+            <Footer />
+          </div>
+        </CVProvider>
       </Router>
     </AuthProvider>
   );
