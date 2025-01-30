@@ -1,4 +1,4 @@
-# sb1-txezekys
+# sb1-txezekys-vtwo
 
 A modern CV management application built with React, Vite, and Supabase.
 
@@ -21,8 +21,8 @@ A modern CV management application built with React, Vite, and Supabase.
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/mhuzairi/sb1-txezekys.git
-cd sb1-txezekys
+git clone https://github.com/mhuzairi/sb1-txezekys-vtwo.git
+cd sb1-txezekys-vtwo
 ```
 
 2. Install dependencies:
@@ -60,7 +60,7 @@ The project is deployed on Vercel. To deploy your own instance:
 
 ## Live Demo
 
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/mhuzairi/sb1-txezekys)
+[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/mhuzairi/sb1-txezekys-vtwo)
 
 ## License
 
