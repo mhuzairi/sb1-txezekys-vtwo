@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
+    "build": "tsc && vite build",
+    "start": "vite preview --port $PORT",
     "preview": "vite preview",
+    "lint": "eslint .",
     "setup-db": "tsx scripts/setup-database-mgmt.ts"
   },
   "dependencies": {
